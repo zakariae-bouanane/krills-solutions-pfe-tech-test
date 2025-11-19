@@ -18,7 +18,7 @@ Assurez-vous d’avoir :
 
 ---
 
-## ⚡ Lancement Rapide de l'Application (Script Automatisé)
+## OPTION 1 : ⚡ Lancement Rapide de l'Application (Script Automatisé)
 
 Pour lancer le Backend et le Frontend simultanément, vous pouvez utiliser le script automatisé fourni. Cette méthode est la plus rapide pour démarrer l'environnement de développement.
 
@@ -66,7 +66,7 @@ Vous pouvez arrêter l'application depuis la **racine du projet** de deux maniè
 
 ---
 
-## 💻 Lancement Normal 
+## OPTION 2 : 💻 Lancement Normal 
 
 Ces instructions détaillent les étapes pour lancer le Backend et le Frontend séparément, en mode développement.
 
@@ -106,4 +106,5 @@ npm run dev
 ```
 
 Accéder à l’interface : http://localhost:5173
+
 
