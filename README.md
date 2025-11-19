@@ -17,10 +17,11 @@ Assurez-vous d’avoir :
 
 
 ---
+## ⚠️ Important
 > **Note CORS :** Le mécanisme CORS est déjà configuré dans le backend pour autoriser la communication avec le frontend.
 
 > **⚠️ Note :** Ce script a été conçu pour l'environnement **Windows** (`.bat`). Si vous utilisez Linux ou macOS, vous devrez exécuter les commandes manuellement ou créer un script shell équivalent (`.sh`).
-> 
+---
 ## OPTION 1 : ⚡ Lancement Rapide de l'Application (Script Automatisé)
 
 Pour lancer le Backend et le Frontend simultanément, vous pouvez utiliser le script automatisé fourni. Cette méthode est la plus rapide pour démarrer l'environnement de développement.
@@ -101,6 +102,7 @@ npm run dev
 ```
 
 Accéder à l’interface : http://localhost:5173
+
 
 
 
