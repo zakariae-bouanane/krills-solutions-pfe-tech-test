@@ -46,7 +46,7 @@ Accéder à l’interface : http://localhost:5173.
 
 Accéder au backend : http://localhost:8080.
 
-## 🛑 Arrêt de l'Application
+### 🛑 Arrêt de l'Application
 
 Le script `stop-local.bat` est fourni pour arrêter proprement et automatiquement tous les processus du Backend et du Frontend lancés localement.
 
@@ -102,6 +102,7 @@ npm run dev
 ```
 
 Accéder à l’interface : http://localhost:5173
+
 
 
 
