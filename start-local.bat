@@ -6,7 +6,7 @@ REM ===========================================
 echo ============================
 echo Starting Backend (Quarkus)...
 echo ============================
-start cmd /k "cd backend && mvn quarkus:dev" 
+start cmd /k "cd backend && mvnw quarkus:dev" 
 
 echo ============================
 echo Starting Frontend (React/Vite)...

@@ -15,13 +15,18 @@ Assurez-vous d’avoir :
 - Maven 3.8.6+ installé (mvn -version)
 - Node.js 18+ et npm (node -v, npm -v)
 
-
 ---
 ## ⚠️ Important
-> **Note CORS :** Le mécanisme CORS est déjà configuré dans le backend pour autoriser la communication avec le frontend.
-
 > **⚠️ Note :** Ce script a été conçu pour l'environnement **Windows** (`.bat`). Si vous utilisez Linux ou macOS, vous devrez exécuter les commandes manuellement ou créer un script shell équivalent (`.sh`).
 ---
+
+# ⚠️ **Compte par défaut** ⚠️
+
+Pour tester l'application, utilisez le compte administrateur par défaut :  
+- **Nom d'utilisateur :** `admin`  
+- **Mot de passe :** `admin`
+---
+
 ## OPTION 1 : ⚡ Lancement Rapide de l'Application (Script Automatisé)
 
 Pour lancer le Backend et le Frontend simultanément, vous pouvez utiliser le script automatisé fourni. Cette méthode est la plus rapide pour démarrer l'environnement de développement.
@@ -42,7 +47,7 @@ Vous pouvez lancer le script depuis la racine (`krills-solutions-pfe-tech-test/`
   .\start-local.bat
   ```
   
-Accéder à l’interface : http://localhost:5173.
+Accéder à l’interface : http://localhost:5174.
 
 Accéder au backend : http://localhost:8080.
 
@@ -79,7 +84,7 @@ Ouvrez un terminal, naviguez vers le répertoire `backend`, puis lancez l'applic
 * **Windows OR Linux / macOS :**
     ```bash
     cd backend
-    mvn quarkus:dev
+    mvnw quarkus:dev
     ```
 
 L'API sera disponible sur : http://localhost:8080
@@ -101,7 +106,21 @@ npm install
 npm run dev
 ```
 
-Accéder à l’interface : http://localhost:5173
+Accéder à l’interface : http://localhost:5174
+
+---
+# Conception
+## Diagramme de navigation
+![Flow](flow-chart.png)
+---
+## Diagramme de classe
+![Diagramme de classe](class-diagram-Krill-solutions.jpg)
+
+
+
+
+
+
 
 
 
