@@ -31,7 +31,7 @@ public class JwtTokenProvider implements ITokenProvider {
         return Jwt.issuer(jwtIssuer)
                 .subject(username)
                 .expiresIn(Duration.ofHours(4))
-                .claim("userId", user.id) // Ajout d'attribut (ID utilisateur)
+                .claim("userId", user.id) // Ajout d'attribut dans token (ID utilisateur)
                 .sign();
     }
 }
