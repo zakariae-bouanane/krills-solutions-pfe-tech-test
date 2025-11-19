@@ -84,7 +84,7 @@ Ouvrez un terminal, naviguez vers le répertoire `backend`, puis lancez l'applic
 * **Windows OR Linux / macOS :**
     ```bash
     cd backend
-    mvn quarkus:dev
+    mvnw quarkus:dev
     ```
 
 L'API sera disponible sur : http://localhost:8080
@@ -115,6 +115,7 @@ Accéder à l’interface : http://localhost:5174
 ---
 ## Diagramme de classe
 ![Diagramme de classe](class-diagram-Krill-solutions.jpg)
+
 
 
 
