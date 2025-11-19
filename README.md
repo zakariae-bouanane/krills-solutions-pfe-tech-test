@@ -88,8 +88,6 @@ L'API sera disponible sur : http://localhost:8080
 
 ### 2. 🖥️ Frontend React (Vite)
 
-Le Frontend est une application React/Vite.
-
 #### 2.1 Accès et Installation des Dépendances
 
 Ouvrez un **nouveau** terminal et naviguez vers le répertoire `frontend`.
@@ -106,5 +104,6 @@ npm run dev
 ```
 
 Accéder à l’interface : http://localhost:5173
+
 
 
