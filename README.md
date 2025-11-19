@@ -17,16 +17,15 @@ Assurez-vous d’avoir :
 
 
 ---
+> **Note CORS :** Le mécanisme CORS est déjà configuré dans le backend pour autoriser la communication avec le frontend.
 
+> **⚠️ Note :** Ce script a été conçu pour l'environnement **Windows** (`.bat`). Si vous utilisez Linux ou macOS, vous devrez exécuter les commandes manuellement ou créer un script shell équivalent (`.sh`).
+> 
 ## OPTION 1 : ⚡ Lancement Rapide de l'Application (Script Automatisé)
 
 Pour lancer le Backend et le Frontend simultanément, vous pouvez utiliser le script automatisé fourni. Cette méthode est la plus rapide pour démarrer l'environnement de développement.
 
-> **Note CORS :** Le mécanisme CORS est déjà configuré dans le backend pour autoriser la communication avec le frontend.
-
-> **⚠️ Note :** Ce script a été conçu pour l'environnement **Windows** (`.bat`). Si vous utilisez Linux ou macOS, vous devrez exécuter les commandes manuellement ou créer un script shell équivalent (`.sh`).
-
-### 1. 📂 Exécution du Script
+### 1. Exécution du Script
 
 Vous pouvez lancer le script depuis la racine (`krills-solutions-pfe-tech-test/`) du projet de deux manières :
 
@@ -42,15 +41,15 @@ Vous pouvez lancer le script depuis la racine (`krills-solutions-pfe-tech-test/`
   .\start-local.bat
   ```
   
-  Accéder à l’interface : http://localhost:5173.
-  
-  Accéder au backend : http://localhost:8080.
+Accéder à l’interface : http://localhost:5173.
+
+Accéder au backend : http://localhost:8080.
 
 ## 🛑 Arrêt de l'Application
 
 Le script `stop-local.bat` est fourni pour arrêter proprement et automatiquement tous les processus du Backend et du Frontend lancés localement.
 
-### 1. 📂 Exécution du Script
+### 1. Exécution du Script
 
 Vous pouvez arrêter l'application depuis la **racine du projet** de deux manières :
 
@@ -84,8 +83,6 @@ Ouvrez un terminal, naviguez vers le répertoire `backend`, puis lancez l'applic
 
 L'API sera disponible sur : http://localhost:8080
 
-> **Note CORS :** Le mécanisme CORS est déjà configuré dans le backend pour autoriser la communication avec le frontend.
-
 ### 2. 🖥️ Frontend React (Vite)
 
 #### 2.1 Accès et Installation des Dépendances
@@ -104,6 +101,7 @@ npm run dev
 ```
 
 Accéder à l’interface : http://localhost:5173
+
 
 
 
