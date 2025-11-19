@@ -10,7 +10,7 @@ Birthday Tracker est une application web qui permet de suivre les anniversaires 
 | **Frontend (Interface)** | React (Vite + Tailwind CSS) | 18 |
 
 ## 🛑 Prérequis
-- Assurez-vous d’avoir :
+Assurez-vous d’avoir :
 - Java 17+ installé (java -version)
 - Maven 3.8.6+ installé (mvn -version)
 - Node.js 18+ et npm (node -v, npm -v)
@@ -106,3 +106,4 @@ npm run dev
 ```
 
 Accéder à l’interface : http://localhost:5173
+
