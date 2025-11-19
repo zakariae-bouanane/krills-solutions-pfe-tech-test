@@ -20,7 +20,7 @@ Assurez-vous d’avoir :
 > **⚠️ Note :** Ce script a été conçu pour l'environnement **Windows** (`.bat`). Si vous utilisez Linux ou macOS, vous devrez exécuter les commandes manuellement ou créer un script shell équivalent (`.sh`).
 ---
 
-#⚠️ **Compte par défaut** ⚠️
+# ⚠️ **Compte par défaut** ⚠️
 
 Pour tester l'application, utilisez le compte administrateur par défaut :  
 - **Nom d'utilisateur :** `admin`  
@@ -115,6 +115,7 @@ Accéder à l’interface : http://localhost:5173
 ---
 ## Diagramme de classe
 ![Diagramme de classe](class-diagram-Krill-solutions.jpg)
+
 
 
 
