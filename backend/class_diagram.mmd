@@ -1,0 +1,114 @@
+classDiagram
+    %% Model Layer
+    class PanacheEntity {
+        <<external>>
+        +Long id
+    }
+    
+    class User {
+        +String username
+        +String passwordHash
+        +String role
+    }
+    
+    class Friend {
+        +String name
+        +String firstName
+        +LocalDate dateOfBirth
+        +String userId
+        +LocalDate getNextBirthday()
+        +List~Friend~ findUpcomingBirthdays(String userId)$
+    }
+    
+    %% DTO Layer
+    class UserDto {
+        +String username
+        +String password
+    }
+    
+    class FriendDTO {
+        +Long id
+        +String name
+        +String firstName
+        +LocalDate dateOfBirth
+        +FriendDTO()
+        +FriendDTO(String, String, LocalDate)
+    }
+    
+    %% Repository Layer
+    class PanacheRepository~T~ {
+        <<interface>>
+        <<external>>
+    }
+    
+    class UserRepository {
+        +User findByUsername(String username)
+    }
+    
+    %% Service Layer
+    class AuthService {
+        -UserRepository userRepository
+        -ITokenProvider provider
+        +String login(String username, String password)
+        +void createUserIfNotExists()
+        +void init()
+    }
+    
+    %% Provider Layer
+    class ITokenProvider {
+        <<interface>>
+        +String GenerateToken(String password, User user, String username)
+    }
+    
+    class JwtTokenProvider {
+        -String jwtIssuer
+        +String GenerateToken(String password, User user, String username)
+    }
+    
+    %% Resource Layer (REST Controllers)
+    class AuthResource {
+        -AuthService authService
+        +Response login(UserDto req)
+    }
+    
+    class FriendResource {
+        -SecurityIdentity securityIdentity
+        -String getUserId()
+        +Response create(FriendDTO friendDTO)
+        +List~FriendDTO~ listUpcomingBirthdays()
+        +List~FriendDTO~ listAll()
+        +Response delete(Long id)
+    }
+    
+    class SecurityIdentity {
+        <<external>>
+        +String getName()
+    }
+    
+    %% Inheritance Relationships
+    User --|> PanacheEntity : extends
+    Friend --|> PanacheEntity : extends
+    UserRepository ..|> PanacheRepository : implements
+    
+    %% Implementation Relationships
+    JwtTokenProvider ..|> ITokenProvider : implements
+    
+    %% Dependency/Usage Relationships
+    AuthResource --> AuthService : @Inject uses
+    AuthResource --> UserDto : uses
+    
+    AuthService --> UserRepository : @Inject uses
+    AuthService --> ITokenProvider : @Inject uses
+    
+    UserRepository --> User : manages
+    
+    JwtTokenProvider --> User : uses
+    
+    FriendResource --> Friend : uses
+    FriendResource --> FriendDTO : uses
+    FriendResource --> SecurityIdentity : @Inject uses
+    
+    Friend --> User : references (via userId)
+    
+    %% Note: Friend uses userId String to reference User (not a direct JPA relationship)
+
