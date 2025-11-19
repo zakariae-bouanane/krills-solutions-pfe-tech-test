@@ -15,13 +15,17 @@ Assurez-vous d’avoir :
 - Maven 3.8.6+ installé (mvn -version)
 - Node.js 18+ et npm (node -v, npm -v)
 
-
 ---
 ## ⚠️ Important
-> **Note CORS :** Le mécanisme CORS est déjà configuré dans le backend pour autoriser la communication avec le frontend.
-
 > **⚠️ Note :** Ce script a été conçu pour l'environnement **Windows** (`.bat`). Si vous utilisez Linux ou macOS, vous devrez exécuter les commandes manuellement ou créer un script shell équivalent (`.sh`).
 ---
+
+⚠️ **Compte par défaut** ⚠️
+Pour tester l'application, utilisez le compte administrateur par défaut :  
+- **Nom d'utilisateur :** `admin`  
+- **Mot de passe :** `admin`
+---
+
 ## OPTION 1 : ⚡ Lancement Rapide de l'Application (Script Automatisé)
 
 Pour lancer le Backend et le Frontend simultanément, vous pouvez utiliser le script automatisé fourni. Cette méthode est la plus rapide pour démarrer l'environnement de développement.
@@ -110,6 +114,7 @@ Accéder à l’interface : http://localhost:5173
 ---
 ## Diagramme de classe
 ![Diagramme de classe](class-diagram-Krill-solutions.jpg)
+
 
 
 
