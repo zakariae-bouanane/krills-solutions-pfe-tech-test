@@ -47,7 +47,7 @@ Vous pouvez lancer le script depuis la racine (`krills-solutions-pfe-tech-test/`
   .\start-local.bat
   ```
   
-Accéder à l’interface : http://localhost:5173.
+Accéder à l’interface : http://localhost:5174.
 
 Accéder au backend : http://localhost:8080.
 
@@ -106,7 +106,7 @@ npm install
 npm run dev
 ```
 
-Accéder à l’interface : http://localhost:5173
+Accéder à l’interface : http://localhost:5174
 
 ---
 # Conception
@@ -115,6 +115,7 @@ Accéder à l’interface : http://localhost:5173
 ---
 ## Diagramme de classe
 ![Diagramme de classe](class-diagram-Krill-solutions.jpg)
+
 
 
 
