@@ -103,6 +103,9 @@ npm run dev
 
 Accéder à l’interface : http://localhost:5173
 
+---
+
+![Diagramme de classe](class-diagram-Krill-solutions.jpg)
 
 
 
