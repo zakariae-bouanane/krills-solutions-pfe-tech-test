@@ -106,10 +106,11 @@ Accéder à l’interface : http://localhost:5173
 ---
 # Conception
 ## Diagramme de navigation
-<img src="flowchart-Krill-solutions.png" alt="description" width="400"/>
+![Flow](flow-chart.png)
 ---
 ## Diagramme de classe
 ![Diagramme de classe](class-diagram-Krill-solutions.jpg)
+
 
 
 
