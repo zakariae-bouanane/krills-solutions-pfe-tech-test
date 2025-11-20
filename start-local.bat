@@ -6,12 +6,12 @@ REM ===========================================
 echo ============================
 echo Starting Backend (Quarkus)...
 echo ============================
-start cmd /k "cd backend && mvnw quarkus:dev" 
+start cmd /k "cd backend && mvnw quarkus:dev -Dquarkus.http.port=8080" 
 
 echo ============================
 echo Starting Frontend (React/Vite)...
 echo ============================
-start cmd /k "cd frontend && npm install && npm run dev"
+start cmd /k "cd frontend && npm install && npm run dev -- --port=5174"
 
 echo ===================================================
 echo Backend and Frontend should now be running
