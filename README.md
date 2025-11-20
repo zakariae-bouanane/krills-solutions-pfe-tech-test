@@ -81,7 +81,7 @@ Ces instructions détaillent les étapes pour lancer le Backend et le Frontend s
 
 Ouvrez un terminal, naviguez vers le répertoire `backend`, puis lancez l'application :
 
-* **Windows OR Linux / macOS :**
+* **Windows (CMD) :**
     ```bash
     cd backend
     mvnw quarkus:dev
@@ -115,6 +115,7 @@ Accéder à l’interface : http://localhost:5174
 ---
 ## Diagramme de classe
 ![Diagramme de classe](class-diagram-Krill-solutions.jpg)
+
 
 
 
